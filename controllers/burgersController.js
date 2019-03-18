@@ -1,14 +1,15 @@
 var express = require("express");
 
-var router = express.Router();
 var db = require("../models");
 
-// get route -> index
+
+
+module.exports = function (router) {
+
+  // get route -> index
 router.get("/", function(req, res) {
   res.redirect("/burgers");
 });
-
-module.exports = function (router) {
 
   // GET route for getting all of the todos
   router.get("/burgers", function (req, res) {
@@ -59,6 +60,7 @@ module.exports = function (router) {
         res.json(dbBurgers);
     });
   });
+  return (router);
 };
 
 
@@ -99,20 +101,20 @@ module.exports = function (router) {
 // module.exports = router;
 
 
-// // exports.findUser = (req, res, next) =>{
-// //   let email = req.params.email
-// //   db.Burger.findOne({
-// //     where : {
-// //       email: email
-// //     }
-// //   }).then((user) => {
-// //     if(burger == null){
-// //       return res.status(401).json({msg:"Invalid Email"})
-// //     }else{
-// //       req.user = user
-// //       next()
-// //   }
-// //   }).catch((err) => {
-// //     return res.status(401).json({msg:err}) 
-// //   })
-// // }
+// exports.findUser = (req, res, next) =>{
+//   let email = req.params.email
+//   db.Burger.findOne({
+//     where : {
+//       email: email
+//     }
+//   }).then((user) => {
+//     if(burger == null){
+//       return res.status(401).json({msg:"Invalid Email"})
+//     }else{
+//       req.user = user
+//       next()
+//   }
+//   }).catch((err) => {
+//     return res.status(401).json({msg:err}) 
+//   })
+// }
