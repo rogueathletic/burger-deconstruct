@@ -9,11 +9,12 @@ router.get("/", function(req, res) {
 });
 
 router.get("/burgers", function(req, res) {
-  // express callback response by calling burger.selectAllBurger
-  db.burger.all(function(burgerData) {
-    // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
-    res.render("index", { burger_data: burgerData });
-  });
+  res.json({index: 'hit index route'})
+  // // express callback response by calling burger.selectAllBurger
+  // db.burger.all(function(burgerData) {
+  //   // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
+  //   res.render("index", { burger_data: burgerData });
+  // });
 });
 
 // post route -> back to index
@@ -39,3 +40,22 @@ router.put("/burgers/:id", function(req, res) {
 });
 
 module.exports = router;
+
+
+// exports.findUser = (req, res, next) =>{
+//   let email = req.params.email
+//   db.Burger.findOne({
+//     where : {
+//       email: email
+//     }
+//   }).then((user) => {
+//     if(burger == null){
+//       return res.status(401).json({msg:"Invalid Email"})
+//     }else{
+//       req.user = user
+//       next()
+//   }
+//   }).catch((err) => {
+//     return res.status(401).json({msg:err}) 
+//   })
+// }
