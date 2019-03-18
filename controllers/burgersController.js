@@ -10,7 +10,7 @@ router.get("/", function(req, res) {
 
   // <----  GET route for getting all of the todos
   router.get("/burgers", function (req, res) {
-    console.log(db);
+
     // <----  findAll returns all entries for a table when used with no options
     db.Burger.findAll({}).then(function (results) {
       // <----  We have access to the bgerss as an argument inside of the callback function
