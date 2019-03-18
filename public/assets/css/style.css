@@ -1,0 +1,216 @@
+
+/* -----------------------> LEts me set each container on the site to full screen width.  <-------------------------- */
+
+
+
+
+
+/* ------------------------------> Background image(s) rules <------------------------------ */
+#burger-deconstruct {
+  z-index: -999999999999999;
+  opacity: 1.0;
+  padding-top: 10vh;
+
+}
+
+img {
+  max-width: 100%;
+  height: 90vh;
+  /* z-index: -99999999998; */
+  pointer-events: none;
+}
+
+#left-burger {
+  margin: 0 0 6vh 0;
+  left: 0;
+  bottom: 0;
+  z-index: -9;
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  height: 70vh;
+  border-radius: 0;
+}
+
+
+#right-burger {
+  margin: 0 0 6vh 0;
+  right: 0;
+  bottom: 0;
+  z-index: -9;
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  height: 70vh;
+  border-radius: 0;
+}
+
+
+/* ------------------------------> Header Nav bar <------------------------------------------- */
+nav {
+ background-color: #00000094;
+  position: fixed;
+  z-index: 9999999999;
+  width: 98vw;
+  opacity: 0.8;
+  /* margin: 0 0 0 -16vw; */
+}
+
+
+
+#menu {
+  text-align: center;
+  letter-spacing: 1vw;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 750px) {
+  menu {
+    background-color: lightblue;
+  }
+}
+
+a {
+  color: rgb(166, 252, 252); 
+  text-shadow: 2px 2px black;
+
+  padding: 1vh;
+
+}
+
+a:hover {
+  color: rgb(0, 253, 198); 
+}
+
+/* -------------------------> Header Nav Text <------------------------------------------ */
+#burger,
+#deconstruct {
+text-align: center;
+}
+
+#burger {
+  letter-spacing: 12vw;
+  margin: 0 0 1vh 6vw;
+  color: rgb(255, 255, 255);
+}
+
+
+#deconstruct {
+  letter-spacing: 1vw;
+  color: rgb(155, 153, 153);
+  margin: 1vh 0 2vh 0;
+}
+
+/* ------------------------------> Footer <--------------------------------------------------- */
+#footer {
+
+
+  /* margin:  0 0 30vw; */
+  padding: 4px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------> Added a thin bounding border for the DOM <----------------- */
+body {
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: repeating-linear-gradient(45deg, #ffffff77, #dddddd77 10px, #ffffff77 10px, #dddddd77 20px);
+  position: unset;
+
+}
+
+/* ------------------------------> Global <--------------------------------------------------- */
+* {
+  border-radius: 11px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------> END <------------------------------------------------------ */
+
+
+#order-submission-form {
+  margin: 1vw;
+  width: 40vw;
+  box-shadow: inset 5px 5px 10px black;
+  border-radius: 20px;
+  padding: 2vw;
+  margin: 1vh 0 1vh 0;
+}
+
+#order-submission-form::placeholder{
+padding-left: 8vw;
+
+}
+
+#text-enter-button{
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  border-radius: .5vw;
+  box-shadow: inset -1px -1px 3px black;
+  margin: 0 0 0 0;
+}
+
+
+#form-control-eaten {
+  width: 40vw;
+  }
+
+
+#order-placed{
+  width: 40vw;
+  background-color: #33bacc;
+  margin: 0 0 0 -1vw;
+  /* left: 200px; */
+}
+#the-app{
+  z-index: 1;
+  width: 40vw;
+  margin: 15vh 0 0 29vw;
+/* display:flex;
+justify-content: space-around; */
+}
+
+/* -----------------------> */
+
+#order-up {
+z-index: 999999999999;
+padding-top: 2vh;
+}
+
+
+#eat-btn {
+border-radius: 8px;
+  font-size: 12px;
+  box-shadow: inset -1px -1px 3px black;
+  margin: 0 0 2vh 0;
+}
+#eat- {
+  border-radius: 8px;
+    font-size: 12px;
+    box-shadow: inset -1px -1px 3px black;
+  }
+
+pre{
+ 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+.col-sm-5{
+  height: 40px;
+  word-wrap: initial;
+}

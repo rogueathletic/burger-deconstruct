@@ -1,0 +1,76 @@
+
+{{!-- <div class="container"> --}}
+	
+	
+	<div class="row">
+		<div class="col-md-12 text-center" id="top-bar">
+			 <nav> 
+<h1 id="burger"> BURGER</h1>
+
+<h4 id="deconstruct"> DECONSTRUCT</h4>
+<div id="menu"> <span><a href="#top">BURGERS API</a> </span> | <span> <a href="https://bit.ly/2F6E1C7">GITHUB</a> </span> | <span> <a href="mailto:jason@skunkworksweb.io"> CONTACT</a></span> </div>
+<br>
+</nav>
+		</div> {{!-- Closing Div for col-md-12 above --}}
+
+        <br>
+        <br>
+{{!-- End background images, pattern and layout content --}}
+		<div id="the-app">
+		<div class="col-md-6 text-center" class="task">
+			<div class="row">
+			  {{#each burger_data}}
+             
+			  	{{#unless this.devoured}}
+<div class="col-md-3">
+					<form class="devour-form button-size">
+						<input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
+						<button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
+					</form>
+				</div>
+				<div class="col-sm-5 text-center" id='order-up'>
+					<pre>{{this.id}}. {{this.burger_name}}
+					</pre>
+				  	 {{this.Date}}
+				</div>
+				{{/unless}}
+			  {{/each}}
+			</div>
+		</div>
+
+		<div class="col-lg-12 " id="order-placed" class="task">
+			  {{#each burger_data}}
+			  	{{#if this.devoured}}
+			  		<input class="form-control " id="form-control-eaten" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
+				{{/if}}
+			  {{/each}}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center enter_section">
+			<form action="/burgers/create" method="POST">
+				<input id="order-submission-form" type="text" class="form-control" placeholder="Place your order here:" name="burger_name" value="" id="enter_text">
+                <br>
+				<button type="submit" class="btn btn-info" id="text-enter-button">S U B M I T </button>
+			<br>
+            </form>
+		</div>
+	</div>
+</div>
+{{!-- End background images, pattern and layout content --}}
+
+    <img src="https://i.imgur.com/cKcfTpk.png" id="left-burger" alt="curiously deconstructed burger top bun">
+
+    <img src="https://i.imgur.com/dfAyCKc.png" id="right-burger" alt="curiously deconstructed burger top bun">
+
+    <!-- Footer -->
+    <footer id="footer">
+            <div id="menu"> <a href="mailto:jason@skunkworksweb.io">© 2019 | Jason Schutz</a> </div>
+        </footer>
+</div>
+{{!--  --}}
+
+
