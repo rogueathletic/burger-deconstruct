@@ -14,7 +14,10 @@ router.get("/", function(req, res) {
     // <----  findAll returns all entries for a table when used with no options
     db.Burger.findAll({}).then(function (results) {
       // <----  We have access to the bgerss as an argument inside of the callback function
-      res.json(results);
+      // res.json(results);
+      res.render("index", {
+        burger_data: results
+      });
     });
   });
 
