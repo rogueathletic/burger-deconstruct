@@ -1,8 +1,5 @@
 var express = require("express");
-
 var db = require("../models");
-
-
 
 module.exports = function (router) {
 
@@ -14,17 +11,17 @@ router.get("/", function(req, res) {
   // GET route for getting all of the todos
   router.get("/burgers", function (req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Burgers.findAll({}).then(function (results) {
-      // We have access to the Burgerss as an argument inside of the callback function
+    db.burgers.findAll({}).then(function (results) {
+      // We have access to the bgerss as an argument inside of the callback function
       res.json(results);
     });
   });
 
-  // POST route for saving a new Burgers. We can create a Burgers using the data on req.body
-  router.post("/Burgers/create", function (req, res) {
+  // POST route for saving a new bgers. We can create a bgers using the data on req.body
+  router.post("/bgers/create", function (req, res) {
     console.log(req.body);
 
-    db.Burgers.create({
+    db.burgers.create({
       text: req.body.text,
       complete: req.body.complete
     }).then(function (dbBurgers) {
@@ -35,7 +32,7 @@ router.get("/", function(req, res) {
   // DELETE route for deleting Burgerss. We can access the ID of the Burgers to delete in
   // req.params.id
   router.delete("/api/Burgers/:id", function (req, res) {
-    db.Burgers.destroy({
+    db.burgers.destroy({
       where: {
         id: req.params.id
       }
@@ -48,7 +45,7 @@ router.get("/", function(req, res) {
 
   // PUT route for updating Burgerss. We can access the updated Burgers in req.body
   router.put("/burgers/:id", function (req, res) {
-    db.Burgers.update({
+    db.burgers.update({
       text: req.body.text,
       complete: req.body.complete
     }, {
