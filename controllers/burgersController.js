@@ -32,7 +32,7 @@ router.get("/", function(req, res) {
 
   // <----  DELETE route for deleting Burgerss. We can access the ID of the Burgers to delete in
   // <----  req.params.id
-  router.delete("/api/Burgers/:id", function (req, res) {
+  router.delete("/Burgers/:id", function (req, res) {
     db.Burger.destroy({
       where: {
         id: req.params.id
