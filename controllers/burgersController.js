@@ -10,8 +10,9 @@ router.get("/", function(req, res) {
 
   // <----  GET route for getting all of the todos
   router.get("/burgers", function (req, res) {
+    console.log(db);
     // <----  findAll returns all entries for a table when used with no options
-    db.burger.findAll({}).then(function (results) {
+    db.Burger.findAll({}).then(function (results) {
       // <----  We have access to the bgerss as an argument inside of the callback function
       res.json(results);
     });
@@ -21,7 +22,7 @@ router.get("/", function(req, res) {
   router.post("/bgers/create", function (req, res) {
     console.log(req.body);
 
-    db.burger.create({
+    db.Burger.create({
       text: req.body.text,
       complete: req.body.complete
     }).then(function (dbBurgers) {
@@ -32,7 +33,7 @@ router.get("/", function(req, res) {
   // <----  DELETE route for deleting Burgerss. We can access the ID of the Burgers to delete in
   // <----  req.params.id
   router.delete("/api/Burgers/:id", function (req, res) {
-    db.burger.destroy({
+    db.Burger.destroy({
       where: {
         id: req.params.id
       }
@@ -45,7 +46,7 @@ router.get("/", function(req, res) {
 
   // <----  PUT route for updating Burgerss. We can access the updated Burgers in req.body
   router.put("/burgers/:id", function (req, res) {
-    db.burger.update({
+    db.Burger.update({
       text: req.body.text,
       complete: req.body.complete
     }, {
