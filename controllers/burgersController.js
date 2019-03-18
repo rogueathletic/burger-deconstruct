@@ -19,7 +19,7 @@ router.get("/", function(req, res) {
   });
 
   // <----  POST route for saving a new bgers. We can create a bgers using the data on req.body
-  router.post("/bgers/create", function (req, res) {
+  router.post("/bugers/create", function (req, res) {
   
 
     db.Burger.create({
