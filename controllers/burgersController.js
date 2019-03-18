@@ -1,7 +1,7 @@
 var express = require("express");
 
 var router = express.Router();
-var db = require("../models");
+var db = require("../models/burger.js");
 
 // get route -> index
 router.get("/", function(req, res) {
@@ -10,7 +10,7 @@ router.get("/", function(req, res) {
 
 router.get("/burgers", function(req, res) {
   // express callback response by calling burger.selectAllBurger
-  db.burger.findAll(function(burgerData) {
+  db.burger.all(function(burgerData) {
     // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
     res.render("index", { burger_data: burgerData });
   });
@@ -29,7 +29,7 @@ router.post("/burgers/create", function(req, res) {
 
 // put route -> back to index
 router.put("/burgers/:id", function(req, res) {
-  burger.update(req.params.id, function(result) {
+  db.burger.update(req.params.id, function(result) {
     // wrapper for orm.js that using MySQL update callback will return a log to console,
     // render back to index with handle
     console.log(result);
