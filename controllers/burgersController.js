@@ -1,7 +1,7 @@
 var express = require("express");
 
 var router = express.Router();
-var db = require("../models/burger.js");
+var db = require("../models");
 
 // get route -> index
 router.get("/", function(req, res) {
