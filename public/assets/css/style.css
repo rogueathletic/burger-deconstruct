@@ -125,8 +125,8 @@ body {
 /* ------------------------------> Global <--------------------------------------------------- */
 * {
   border-radius: 11px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
   word-wrap: break-word;
 
 }
