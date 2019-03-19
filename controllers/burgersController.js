@@ -1,8 +1,7 @@
 var express = require("express");
-var router = express.Router();
 var db = require("../models");
 
-
+module.exports = function (router) {
 
   // <----  get route -> index
 router.get("/", function(req, res) {
@@ -59,9 +58,8 @@ router.get("/", function(req, res) {
         res.json(dbBurgers);
     });
   });
-  
-
-  module.exports = router;
+  return (router);
+};
 
 
 
