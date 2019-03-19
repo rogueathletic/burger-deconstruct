@@ -17,18 +17,18 @@
         <br>
 {{!-- End background images, pattern and layout content --}}
 		<div id="the-app">
-		<div class="col-md-6 text-center" class="task">
+		<div class="col-lg-12 text-center" class="task">
 			<div class="row">
 			  {{#each burger_data}}
              
 			  	{{#unless this.devoured}}
-<div class="col-md-6 text-center">
+<div class="col-lg-12 text-center">
 					<form class="devour-form button-size">
 						<input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
 						<button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
 					</form>
 				</div>
-				<div class="col-sm-5 text-center" id='order-up'>
+				<div class="col-md-6 text-center" id='order-up'>
 					<pre>{{this.id}}. {{this.burger_name}}
 					</pre>
 				  	 {{this.Date}}
