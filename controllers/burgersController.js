@@ -2,6 +2,8 @@ var express = require("express");
 var router = express.Router();
 var db = require("../models");
 
+
+
   // <----  get route -> index
 router.get("/", function(req, res) {
   res.redirect("/burgers");
@@ -31,7 +33,7 @@ router.get("/", function(req, res) {
 
   // <----  DELETE route for deleting Burgerss. We can access the ID of the Burgers to delete in
   // <----  req.params.id
-  router.delete("/burgers/:id", function (req, res) {
+  router.delete("/Burgers/:id", function (req, res) {
     db.Burger.destroy({
       where: {
         id: req.params.id
@@ -54,7 +56,7 @@ router.get("/", function(req, res) {
       }
     })
       .then(function(dbBurgers) {
-        res.json("/");
+        res.json(dbBurgers);
     });
   });
   
