@@ -149,6 +149,11 @@ color: #66666677;
 
 }
 
+#order-submission-form::placeholder:hover{
+  color: #66666611;
+  
+  }
+
 #text-enter-button{
   width: 40vw;
   display: flex;
