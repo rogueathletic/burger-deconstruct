@@ -1,6 +1,5 @@
 var express = require("express");
 var db = require("./models");
-var exphbs = require("express-handlebars");
 var router = express.Router();
 
 var PORT = process.env.PORT || 8000;
@@ -15,13 +14,12 @@ app.use(express.urlencoded({
 }));
 
 app.use(express.json());
-
+  var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+  var routes = require("./controllers/burgersController.js")(router);
 
-var routes = require("./controllers/burgersController.js")(router);
-
-app.use('/',routes);
+app.use(routes);
 
 db.sequelize.sync({logging: console.log}).then(function () {
   app.listen(PORT, function () {
