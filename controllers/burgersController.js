@@ -13,8 +13,7 @@ router.get("/", function(req, res) {
 
     // <----  findAll returns all entries for a table when used with no options
     db.Burger.findAll({}).then(function (results) {
-      // <----  We have access to the bgerss as an argument inside of the callback function
-      // res.json(results);
+
       res.render("index", {
         burger_data: results
       });
@@ -22,10 +21,8 @@ router.get("/", function(req, res) {
   });
 
   // <----  POST route for saving a new bgers. We can create a bgers using the data on req.body
-  router.post("/bugers/create", function (req, res) {
-  
-
-    db.Burger.create({
+  router.post("/burgers/create", function (req, res) {
+      db.Burger.create({
       text: req.body.text,
       complete: req.body.complete
     }).then(function (dbBurgers) {
