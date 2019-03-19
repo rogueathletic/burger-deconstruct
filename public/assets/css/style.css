@@ -141,12 +141,14 @@ body {
 
 
 #order-submission-form {
-  margin: 1vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 40vw;
+  top: 200px;
   box-shadow: inset 5px 5px 10px black;
   border-radius: 20px;
   padding: 2vw;
-  margin: 1vh 0 1vh 0;
 }
 
 #order-submission-form::placeholder{
