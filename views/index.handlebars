@@ -22,22 +22,22 @@
 			  {{#each burger_data}}
              
 			  	{{#unless this.devoured}}
-<div class="col-lg 12">
+<div class="col-md-6 text-center">
 					<form class="devour-form button-size">
 						<input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
 						<button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
 					</form>
-				
-				<span id='order-up'>
+				</div>
+				<div class="col-sm-5 text-center" id='order-up'>
 					<pre>{{this.id}}. {{this.burger_name}}
 					</pre>
 				  	 {{this.Date}}
-				</span>
+				</div>
 				{{/unless}}
 			  {{/each}}
 			</div>
 		</div>
-</div>
+
 		<div class="col-lg-12 " id="order-placed" class="task">
 			  {{#each burger_data}}
 			  	{{#if this.devoured}}
