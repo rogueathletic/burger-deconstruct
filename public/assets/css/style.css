@@ -1,15 +1,8 @@
-
-/* -----------------------> LEts me set each container on the site to full screen width.  <-------------------------- */
-
-
-
-
-
 /* ------------------------------> Background image(s) rules <------------------------------ */
 #burger-deconstruct {
   z-index: -999999999999999;
   opacity: 1.0;
-  padding-top: 10vh;
+
 
 }
 
@@ -120,7 +113,7 @@ text-align: center;
 
 /* ------------------------------> Added a thin bounding border for the DOM <----------------- */
 body {
-  padding: 10px;
+
   overflow-x: hidden;
   overflow-y: scroll;
   background: repeating-linear-gradient(45deg, #ffffff77, #dddddd77 10px, #ffffff77 10px, #dddddd77 20px);
@@ -131,8 +124,8 @@ body {
 /* ------------------------------> Global <--------------------------------------------------- */
 * {
   border-radius: 11px;
-  overflow-x:hidden;
-  overflow-y:scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   word-wrap: break-word;
 
 }
@@ -151,6 +144,8 @@ body {
 
 #order-submission-form::placeholder{
 padding-left: 8vw;
+letter-spacing: 2vw;
+color: #666666;
 
 }
 
