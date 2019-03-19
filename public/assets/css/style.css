@@ -189,3 +189,7 @@ pre{
   height: 40px;
   word-wrap: initial;
 }
+
+.devour {
+  float: left;
+}
