@@ -146,13 +146,7 @@ body {
 padding-left: 4vw;
 letter-spacing: 1vw;
 color: #66666677;
-
 }
-
-#order-submission-form::placeholder:hover{
-  color: #66666611;
-  
-  }
 
 #text-enter-button{
   width: 40vw;
@@ -166,7 +160,7 @@ color: #66666677;
 
 #form-control-eaten {
   width: 40vw;
-  }
+}
 
 
 #order-placed{
