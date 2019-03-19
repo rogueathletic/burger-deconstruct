@@ -1,7 +1,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   var Burger = sequelize.define('Burger', {
-    burger_name: DataTypes.STRING,
+    Burger_name: DataTypes.STRING,
     devoured: DataTypes.BOOLEAN
   }, {});
   Burger.associate = function(models) {

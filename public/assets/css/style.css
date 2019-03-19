@@ -46,7 +46,8 @@ nav {
  background-color: #00000094;
   position: fixed;
   z-index: 9999999999;
-  width: 98vw;
+  width: 96vw;
+  margin: 0 0 0 2vw;
   opacity: 0.8;
   /* margin: 0 0 0 -16vw; */
 }
