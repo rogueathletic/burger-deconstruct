@@ -6,6 +6,7 @@ module.exports = function (router) {
   // <----  get route -> index
 router.get("/", function(req, res) {
   res.redirect("/burgers");
+  console.log("get /",this)
 });
 
   // <----  GET route for getting all of the todos
@@ -13,7 +14,7 @@ router.get("/", function(req, res) {
 
     // <----  findAll returns all entries for a table when used with no options
     db.Burger.findAll({}).then(function (results) {
-
+console.log("get /burgers",this)
       res.render("index", {
         burger_data: results
       });
@@ -27,13 +28,16 @@ router.get("/", function(req, res) {
       complete: req.body.complete
     }).then(function (dbBurgers) {
       res.json(dbBurgers);
+      console.log("get /burgers", dbBurgers)
     });
   });
 
   // <----  DELETE route for deleting Burgerss. We can access the ID of the Burgers to delete in
   // <----  req.params.id
   router.delete("/Burgers/:id", function (req, res) {
+    console.log('router.delete:', router.delete);
     db.Burger.destroy({
+      
       where: {
         id: req.params.id
       }
