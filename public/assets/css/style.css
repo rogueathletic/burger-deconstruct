@@ -131,15 +131,16 @@ body {
 
 }
 
-/* ------------------------------> END <------------------------------------------------------ */
+/* ------------------------------>  <------------------------------------------------------ */
 
 
 #order-submission-form {
 
-  width: 40vw;
+  width: 100vw;
   box-shadow: inset 5px 5px 10px black;
   border-radius: 20px;
-  padding: 2vw;
+  padding-left: 30vw;
+  padding-right: 30vw;
   margin: 5vh 0 1vh 0;
 }
 
