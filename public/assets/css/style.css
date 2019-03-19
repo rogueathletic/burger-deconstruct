@@ -2,8 +2,6 @@
 #burger-deconstruct {
   z-index: -999999999999999;
   opacity: 1.0;
-
-
 }
 
 img {
@@ -26,7 +24,6 @@ img {
   border-radius: 0;
 }
 
-
 #right-burger {
   margin: 0 0 6vh 0;
   right: 0;
@@ -40,7 +37,6 @@ img {
   border-radius: 0;
 }
 
-
 /* ------------------------------> Header Nav bar <------------------------------------------- */
 nav {
  background-color: #00000094;
@@ -51,8 +47,6 @@ nav {
   opacity: 0.8;
   /* margin: 0 0 0 -16vw; */
 }
-
-
 
 #menu {
   text-align: center;
@@ -69,9 +63,7 @@ nav {
 a {
   color: rgb(166, 252, 252); 
   text-shadow: 2px 2px black;
-
   padding: 1vh;
-
 }
 
 a:hover {
@@ -99,9 +91,6 @@ text-align: center;
 
 /* ------------------------------> Footer <--------------------------------------------------- */
 #footer {
-
-
-  /* margin:  0 0 30vw; */
   padding: 4px;
   position: fixed;
   left: 0;
@@ -114,9 +103,6 @@ text-align: center;
 
 /* ------------------------------> striped background <----------------- */
 body {
-
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
   background: repeating-linear-gradient(45deg, #ffffff77, #dddddd77 10px, #ffffff77 10px, #dddddd77 20px);
   position: unset;
 
@@ -125,10 +111,7 @@ body {
 /* ------------------------------> Global <--------------------------------------------------- */
 * {
   border-radius: 11px;
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
   word-wrap: break-word;
-
 }
 
 /* ------------------------------>  <------------------------------------------------------ */
@@ -158,11 +141,9 @@ color: #66666677;
   margin: 0 0 0 10vw;
 }
 
-
 #form-control-eaten {
   width: 40vw;
 }
-
 
 #order-placed{
   width: 40vw;
@@ -170,6 +151,7 @@ color: #66666677;
   margin: 0 0 0 -1vw;
   /* left: 200px; */
 }
+
 #the-app{
   z-index: 1;
   width: 40vw;
@@ -185,7 +167,6 @@ z-index: 999999999999;
 padding-top: 2vh;
 }
 
-
 #eat-btn {
 border-radius: 8px;
   font-size: 12px;
@@ -199,12 +180,11 @@ border-radius: 8px;
   }
 
 pre{
- 
- 
   font-weight: 600;
-
   text-transform: uppercase;
+  overflow: visible;
 }
+
 .col-sm-5{
   height: 40px;
   word-wrap: initial;
