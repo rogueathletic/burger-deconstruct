@@ -22,8 +22,7 @@ router.get("/", function(req, res) {
   // <----  POST route for saving a new bgers. We can create a bgers using the data on req.body
   router.post("/burgers/create", function (req, res) {
       db.Burger.create({
-      text: req.body.text,
-      complete: req.body.complete
+        burger_name: req.body.burger_name
     }).then(function (dbBurgers) {
       res.json(dbBurgers);
     });
