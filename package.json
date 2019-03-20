@@ -4,6 +4,7 @@
   "description": "burger ordering server bassed app with express and sequelized",
   "main": "server.js",
   "dependencies": {
+    "eslint": "^5.15.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "heroku": "^7.22.7",
