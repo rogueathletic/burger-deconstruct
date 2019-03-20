@@ -35,8 +35,8 @@ router.get("/", function(req, res) {
       where: {
         id: req.params.id
       }
-    }).then(function (results) {
-      res.destroy();
+    }).then(function (dbBurgers) {
+      res.delete();
     });
   });
 
