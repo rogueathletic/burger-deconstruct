@@ -36,7 +36,7 @@ router.get("/", function(req, res) {
         id: req.params.id
       }
     }).then(function (results) {
-      res.destroy(thiS, {{this.id}});
+      res.destroy(thiS.burger_name);
     });
   });
 
