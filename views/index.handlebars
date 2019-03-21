@@ -28,10 +28,11 @@
         {{#each burger_data}} {{#unless this.devoured}}
       </div>
 
-      <div class="col">
+      <div class="col" id="btn">
         <form class="devour-form button-size">
-          <input type="hidden" class="burger_id" type="text" value={{this.id}} alt="button to consume burger">
           <button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
+          <input type="hidden" class="burger_id" type="text" value={{this.id}} alt="button to consume burger">
+
         </form>
       </div>
 
