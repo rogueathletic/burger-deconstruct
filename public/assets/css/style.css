@@ -191,3 +191,7 @@ pre {
 .devour {
   float: left;
 }
+
+.devour-form{
+  max-width: 100px;
+}
