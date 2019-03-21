@@ -105,7 +105,6 @@ text-align: center;
 body {
   background: repeating-linear-gradient(45deg, #ffffff77, #dddddd77 10px, #ffffff77 10px, #dddddd77 20px);
   position: unset;
-
 }
 
 /* ------------------------------> Global <--------------------------------------------------- */
@@ -118,46 +117,42 @@ body {
 
 
 #order-submission-form {
-
   width: 40vw;
   box-shadow: inset 5px 5px 10px black;
   border-radius: 20px;
   padding: 2vw;
-  margin: 5vh 0 1vh 10vw;
+  margin: 5vh 0 1vh 0;
 }
 
-#order-submission-form::placeholder{
+#order-submission-form::placeholder {
 padding-left: 4vw;
 letter-spacing: 1vw;
 color: #66666677;
 }
 
-#text-enter-button{
+#text-enter-button {
   width: 40vw;
   display: flex;
   justify-content: center;
-  border-radius: .5vw;
+  border-radius: 0.5vw;
   box-shadow: inset -1px -1px 3px black;
-  margin: 0 0 0 10vw;
+  margin: 0 0 0 0;
 }
 
 #form-control-eaten {
   width: 40vw;
 }
 
-#order-placed{
+#order-placed {
   width: 40vw;
   background-color: #33bacc;
   margin: 0 0 0 -1vw;
-  /* left: 200px; */
-}
+  }
 
-#the-app{
+#the-app {
   z-index: 1;
   width: 40vw;
   margin: 15vh 0 0 29vw;
-/* display:flex;
-justify-content: space-around; */
 }
 
 /* -----------------------> */
@@ -173,19 +168,22 @@ border-radius: 8px;
   box-shadow: inset -1px -1px 3px black;
   margin: 0 0 2vh 0;
 }
-#eat- {
+
+#eat-btn:active {
   border-radius: 8px;
     font-size: 12px;
     box-shadow: inset -1px -1px 3px black;
   }
 
-pre{
+pre {
   font-weight: 600;
   text-transform: uppercase;
-  overflow: visible;
+  text-align: center;
+  width: 100vw;
+  margin: 0 0 0 -50vw;
 }
 
-.col-sm-5{
+.col-sm-5 {
   height: 40px;
   word-wrap: initial;
 }
