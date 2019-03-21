@@ -161,6 +161,7 @@ nav {
   #the-app {
     z-index: 1;
     width: 40vw;
+    top: 300px;
     margin: 210px 0 0 29vw;
 }
 
