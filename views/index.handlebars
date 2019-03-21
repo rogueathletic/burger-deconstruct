@@ -24,21 +24,20 @@
 
   <div class="container">
     <div class="row text-center">
-      <div class="col">
-
-        {{#each burger_data}} {{#unless this.devoured}}
+      <div class="col" alt="burger up ready to eat ">
+       {{this.id}}.{{#each burger_data}} {{#unless this.devoured}}
       </div>
 
       <div class="col">
         <form class="devour-form button-size">
-          <input type="hidden" class="burger_id" type="text" value={{this.id}}>
+          <input type="hidden" class="burger_id" type="text" value={{this.id}} alt="button to consume burger">
           <button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
         </form>
       </div>
 
       <div class="w-100"></div>
 
-      <div>{{this.id}}. {{this.burger_name}}
+      <div>{{this.burger_name}}
       </div>{{this.Date}}
 
 
