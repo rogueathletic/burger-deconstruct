@@ -21,9 +21,12 @@
 <div id="the-app" alt="the application interface">
 
   <div class="container">
+    <div class="row text-center">
+
       <div class="col" alt="burger up ready to eat ">
         {{#each burger_data}} {{#unless this.devoured}}
       </div>
+
 
 			<div class="col" alt="Button to clear served berger">
         <form class="devour-form button-size">
@@ -38,9 +41,8 @@
 
       <div class="w-100"></div>
 
-      <div id="created-order-text">{{this.id}}. {{this.burger_name}}
-      </div>
-			{{!-- {{this.Date}} --}}
+      <div>{{this.id}}. {{this.burger_name}}
+      </div>{{this.Date}}
 
 
       <div class="col justify-content-left">
@@ -51,6 +53,7 @@
         {{#each burger_data}} {{#if this.devoured}}
         <input class="form-control " id="form-control-eaten" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly> {{/if}} {{/each}}
       </div>
+    </div>
   </div>
 
 
