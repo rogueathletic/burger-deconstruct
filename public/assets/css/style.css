@@ -1,15 +1,11 @@
-/* ------------------------------> Background image(s) rules <------------------------------ */
-#burger-deconstruct {
-  z-index: -999999999999999;
-  opacity: 1.0;
-}
+/* Use the comented out lines to find the code your looking for. Each section
+and catagory on theis page has been split & Segrigated for ease of use. 
+Pleae let me know if there is a better way to do this. Thanks Jason!*/
 
-img {
-  max-width: 100%;
-  height: 90vh;
-  /* z-index: -99999999998; */
-  pointer-events: none;
-}
+
+
+
+/* ------------------> Burger images  <--------------------------------- */
 
 #left-burger {
   margin: 0 0 6vh 0;
@@ -37,161 +33,168 @@ img {
   border-radius: 0;
 }
 
-/* ------------------------------> Header Nav bar <------------------------------------------- */
+/* ------------------> controlder for the burger images  <-------------- */
+
+img {
+  max-width: 100%;
+  height: 90vh;
+  /* z-index: -99999999998; */
+  pointer-events: none;
+}
+
+/* -----------------> The main container for the header/navigation  <--- */
+
 nav {
- background-color: #00000094;
-  position: fixed;
-  z-index: 9999999999;
-  width: 96vw;
-  margin: 0 0 0 2vw;
-  opacity: 0.8;
-  /* margin: 0 0 0 -16vw; */
+  background-color: #00000094;
+    position: fixed;
+    z-index: 9999999999;
+    width: 96vw;
+    margin: 0 0 0 2vw;
+    opacity: 0.8;
+    /* margin: 0 0 0 -16vw; */
 }
 
-#menu {
-  text-align: center;
-  letter-spacing: 1vw;
-  color: rgb(255, 255, 255);
+/* ------------------ > The menu inside of the header  < --------------- */
+
+  #menu {
+    text-align: center;
+    letter-spacing: 1vw;
+    color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 750px) {
-  menu {
-    background-color: lightblue;
+  @media only screen and (max-width: 750px) {
+    menu {
+      background-color: lightblue;
   }
 }
+/* ------------------ > All links  < --------===================-------- */
 
-a {
-  color: rgb(166, 252, 252); 
-  text-shadow: 2px 2px black;
-  padding: 1vh;
+  a {
+    color: rgb(166, 252, 252); 
+    text-shadow: 2px 2px black;
+    padding: 1vh;
 }
 
-a:hover {
-  color: rgb(0, 253, 198); 
+  a:hover {
+    color: rgb(0, 253, 198); 
 }
 
 /* -------------------------> Header Nav Text <------------------------------------------ */
-#burger,
-#deconstruct {
-text-align: center;
+  #burger,
+  #deconstruct {
+    text-align: center;
 }
 
-#burger {
-  letter-spacing: 12vw;
-  margin: 0 0 1vh 6vw;
-  color: rgb(255, 255, 255);
+  #burger {
+    letter-spacing: 12vw;
+    margin: 0 0 1vh 6vw;
+    color: rgb(255, 255, 255);
 }
 
 
-#deconstruct {
-  letter-spacing: 1vw;
-  color: rgb(155, 153, 153);
-  margin: 1vh 0 2vh 0;
+  #deconstruct {
+    letter-spacing: 1vw;
+    color: rgb(155, 153, 153);
+    margin: 1vh 0 2vh 0;
 }
 
-/* ------------------------------> Footer <--------------------------------------------------- */
-#footer {
-  padding: 4px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  border-radius: 0;
-  background-color:rgba(0, 0, 0, 0.1);
+/* ------------------------------> Footer <----------------------------- */
+  #footer {
+    padding: 4px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    background-color:rgba(0, 0, 0, 0.1);
 }
 
-/* ------------------------------> striped background <----------------- */
-body {
-  background: repeating-linear-gradient(45deg, #ffffff77, #dddddd77 10px, #ffffff77 10px, #dddddd77 20px);
-  position: unset;
-}
-
-/* ------------------------------> Global <--------------------------------------------------- */
-* {
-  border-radius: 11px;
-  word-wrap: break-word;
-}
-
-/* ------------------------------>  <------------------------------------------------------ */
-
-
-#order-submission-form {
-  width: 40vw;
-  box-shadow: inset 5px 5px 10px black;
-  border-radius: 20px;
-  padding: 2vw;
-  margin: 5vh 0 1vh 0;
-}
-
-#order-submission-form::placeholder {
-padding-left: 4vw;
-letter-spacing: 1vw;
-color: #66666677;
-}
-
-#text-enter-button {
-  width: 40vw;
-  display: flex;
-  justify-content: center;
-  border-radius: 0.5vw;
-  box-shadow: inset -1px -1px 3px black;
-  margin: 0 0 0 0;
-}
-
-#form-control-eaten {
-  width: 40vw;
-}
-
-#order-placed {
-  width: 40vw;
-  background-color: #33bacc;
-  margin: 0 0 0 -1vw;
+/* ------------------> striped background Covering Body <--------------- */
+  body {
+    background: repeating-linear-gradient(45deg, #ffffff77, #dddddd77 10px, #ffffff77 10px, #dddddd77 20px);
+    position: unset;
   }
 
-#the-app {
-  z-index: 1;
-  width: 40vw;
-  margin: 210px 0 0 29vw;
+/* ------------------> Global Variable  <------------------------------- */
+
+  * {
+    border-radius: 11px;
+    word-wrap: break-word;
 }
 
-/* -----------------------> */
+/* ------------------> form where order is placed <--------------------- */
 
-#order-up {
-z-index: 999999999999;
-padding-top: 2vh;
+  #order-submission-form {
+    width: 40vw;
+    box-shadow: inset 5px 5px 10px black;
+    border-radius: 20px;
+    padding: 2vw;
+    margin: 5vh 0 1vh 0;
 }
 
-#eat-btn {
-border-radius: 8px;
-  font-size: 12px;
-  box-shadow: inset -1px -1px 3px black;
-  margin: 0 0 2vh 0;
+  #order-submission-form::placeholder {
+    padding-left: 4vw;
+    letter-spacing: 1vw;
+    color: #66666677;
 }
 
-#eat-btn:active {
-  border-radius: 8px;
+/* ------------------> Submiot Button  <-------------------------------- */
+
+  #text-enter-button {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5vw;
+    box-shadow: inset -1px -1px 3px black;
+    margin: 0 0 0 0;
+}
+
+/* ----------------- > Eaten Burgers width setting   ------------------- */
+
+  #form-control-eaten {
+    width: 40vw;
+}
+
+/* ------------------> The Body of the application  <------------------- */
+
+  #the-app {
+    z-index: 1;
+    width: 40vw;
+    margin: 210px 0 0 29vw;
+}
+
+/* ------------------> Appended div for burger order <------------------ */
+
+  pre {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100vw;
+    margin: 0 0 0 -50vw;
+}
+
+/* ------------------> Destroy Burger Button  <------------------------- */
+
+  #eat-btn {
+    border-radius: 8px;
     font-size: 12px;
     box-shadow: inset -1px -1px 3px black;
-  }
-
-pre {
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100vw;
-  margin: 0 0 0 -50vw;
+    margin: 0 0 2vh 0;
+}
+  
+  #eat-btn:active {
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: inset -1px -1px 3px black;
 }
 
-.col-sm-5 {
-  height: 40px;
-  word-wrap: initial;
+
+/* ------------------> Devour below  <---------------------------------- */
+  .devour {
+    float: left;
 }
 
-.devour {
-  float: left;
-}
-
-.devour-form{
-  max-width: 100px;
+  .devour-form{
+    max-width: 100px;
 }
