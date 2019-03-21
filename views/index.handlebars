@@ -23,12 +23,12 @@
   <div class="container">
     <div class="row text-center">
 
-      <div class="col" alt="burger up ready to eat ">
+      <div class="col pull-left" alt="burger up ready to eat ">
         {{#each burger_data}} {{#unless this.devoured}}
       </div>
 
 
-			<div class="col" alt="Button to clear served berger">
+			<div class="col pull-right" alt="Button to clear served berger">
         <form class="devour-form button-size">
           <input type="hidden" class="burger_id" type="text" value={{this.id}} alt="button to consume burger">
           <button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
