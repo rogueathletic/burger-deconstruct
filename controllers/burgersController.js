@@ -36,11 +36,13 @@ router.get("/", function(req, res) {
         id: req.params.id
       }
     }).then(function (dbBurgers) {
-      res.redirect("/");
+      res.destroy(dbBurger);
     });
   });
 
-
+  $('#btn-txt').on('ajax:success', function(event){
+    $(this).closest('pre').remove();
+})
 
   // <----  PUT route for updating Burgerss. We can access the updated Burgers in req.body
   router.put("/burgers/:id", function (req, res) {
