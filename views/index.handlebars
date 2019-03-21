@@ -45,11 +45,11 @@
       </div>{{this.Date}}
 
 
-      <div class="col">
+      <div class="col justify-content-left">
         {{/unless}} {{/each}}
       </div>
 
-      <div class="col">
+      <div class="col justify-content-right">
         {{#each burger_data}} {{#if this.devoured}}
         <input class="form-control " id="form-control-eaten" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly> {{/if}} {{/each}}
       </div>
