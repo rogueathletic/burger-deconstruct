@@ -35,8 +35,8 @@ router.get("/", function(req, res) {
       where: {
         id: req.params.id
       }
-    }).then(function (results) {
-      res.delete(thiS);
+    }).then(function (dbBurger) {
+      res.json(dbBurger);
     });
   });
 
@@ -52,8 +52,8 @@ router.get("/", function(req, res) {
         id: req.body.id
       }
     })
-      .then(function(dbBurgers) {
-        res.json(dbBurgers);
+      .then(function(dbBurger) {
+        res.json(dbBurger);
     });
   });
   return (router);
