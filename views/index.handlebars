@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>B U R G E R Deconstructed</title>
-		<meta charset="UTF-8">
 
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<link href='/assets/css/style.css' rel='stylesheet' type='text/css' />
-	</head>
-	<body>
-
-
+{{!-- <div class="container"> --}}
 	
 	
+	<div class="row">
+		<div class="col-md-12 text-center" id="top-bar">
+			 <nav> 
+<h1 id="burger"> BURGER</h1>
+
+<h4 id="deconstruct"> DECONSTRUCT</h4>
+<div id="menu"> <span><a href="#top">BURGERS API</a> </span> | <span> <a href="https://bit.ly/2F6E1C7">GITHUB</a> </span> | <span> <a href="mailto:jason@skunkworksweb.io"> CONTACT</a></span> </div>
+<br>
+</nav>
+		</div> {{!-- Closing Div for col-md-12 above --}}
+
+        <br>
+        <br>
+
+		<div id="the-app">
+
 	<div class="row">
 		<div class="col-md-12 text-center" id="top-bar">
 			 <nav> 
@@ -30,61 +32,6 @@
         <br>
 
 		<div id="the-app">
-    
-    
-    
-    
-    
-<!-- 		<div class="col-lg-6 text-center" class="task">
-		  <div class="row">
-		
-		<span>
-		      <form class="devour-form button-size">
-		        <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-		        <button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
-		      </form>
-		
-		      <pre>
-		          cheese burger
-		      </pre>
-		          </span>
-		
-		<div class="col-lg-12 " id="order-placed" class="task">
-		
-		</div>
-		  </div>
-		</div> -->
-
-
-<div class="container">
-    <div class="row text-center">
-        <div class="col">  {{#each burger_data}}
-            {{#unless this.devoured}}
-        </div>
-
-
-        <div class="col">
-                <form class="devour-form button-size">
-                    <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-                <button type="submit" id="eat-btn" class="btn btn-info"><span id="btn-txt">E A T &nbsp; M E</span></button>
-                </form>
-        </div>
-            <div class="w-100"></div>
-            <div class="col">
-                   <div>
-                   <pre>
-                        {{this.id}}. 
-                        {{this.burger_name}}   
-                    </pre>
-                    </div>
-                   </div>
-{{this.Date}}
-          <div class="col">
-            {{/unless}}
-            {{/each}}
-    </div>
-</div>
-
 
 
 <div class="container">
@@ -99,7 +46,7 @@
 		</div>
 	</div>
 </div>
-
+{{!-- End background images, pattern and layout content --}}
 
     <img src="https://i.imgur.com/cKcfTpk.png" id="left-burger" alt="curiously deconstructed burger top bun">
 
@@ -110,14 +57,6 @@
             <div id="menu"> <a href="mailto:jason@skunkworksweb.io">© 2019 | Jason Schutz</a> </div>
         </footer>
 </div>
+{{!--  --}}
 
 
-
-
-
-
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-	</body>
-</html>
