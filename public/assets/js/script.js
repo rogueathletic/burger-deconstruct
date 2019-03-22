@@ -6,7 +6,7 @@ $(document).ready(function() {    // <-----
     var burger_id = $(this).children(".burger_id").val();    // <----- 
     // console.log(burger_id);    // <----- 
     $.ajax({    // <----- 
-      method: "PUT",    // <----- 
+      method: "delete",    // <----- 
       url: "/burgers/" + burger_id    // <----- 
     }).then(function(data) {    // <----- 
       // reload page to display devoured burger in proper column
