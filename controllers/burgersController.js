@@ -36,7 +36,7 @@ router.get("/", function(req, res) {
         id: req.params.id
       }
     }).then(function (dbBurger) {
-      $(this.eat-btn).destroy();
+      res.json('/');
     });
   });
 
