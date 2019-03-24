@@ -1,3 +1,13 @@
+
+MYSQL_USER="lnla06ejeulsfpkf",
+MYSQL_PASS="m063o4d0isoky0mv",
+MYSQL_DB="database": "gd0pied89ut50hyd",
+  JAWS_DB_URL=
+#host: "zj2x67aktl2o6q2n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
+
+# <------------------------------------------------------------->
+                         # SQL ABOVE
+# <------------------------------------------------------------->
 # Logs
 logs
 *.log
