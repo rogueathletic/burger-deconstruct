@@ -1,6 +1,8 @@
 var express = require("express");
+var router = express.Router();
 var db = require("../models");
-var script = require("../public/assets/js/script")
+var script = require("../public/assets/js/script");
+
 module.exports = function (router) {
 
   // <----  get route -> index
@@ -25,7 +27,7 @@ router.get("/", function(req, res) {
       db.Burger.create({
         burger_name: req.body.burger_name
     }).then(function (dbBurgers) {
-      res.json(dbBurger);
+      res.redirect('/');
     });
   });
 

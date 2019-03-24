@@ -1,8 +1,6 @@
 var express = require("express");
 var db = require("./models");
 var router = express.Router();
-
-var PORT = process.env.PORT || 8000;
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -21,6 +19,8 @@ app.set("view engine", "handlebars");
 
 app.use(routes);
 
+
+var PORT = process.env.PORT || 8000;
 db.sequelize.sync({logging: console.log}).then(function () {
   app.listen(PORT, function () {
     // console.log("App listening on PORT " + PORT);
